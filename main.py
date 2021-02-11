@@ -1,6 +1,6 @@
 code_input = input("Enter the phrase you want to have encoded. ")
 
-def encryt_message(code):
+def secret_message_maker(code):
     original_code = list(code) # coverting string into a list and sending it variable
     new_code = []  #list to send values to 
     for i in original_code: #iterate through each item of list
@@ -62,4 +62,4 @@ def encryt_message(code):
 
     return ".".join(new_code) #joins list together with period between each value
 
-print(("Your encoded message is : "+ str(encryt_message(code_input))))  # prints new value with message
+print(("Your encoded message is : "+ str(secret_message_maker(code_input))))  # prints new value with message
